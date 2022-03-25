@@ -1,0 +1,18 @@
+﻿.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+body {
+    font-family:'Agency FB';
+    font-size:20px;
+    background-color:aliceblue;
+    text-align:left;
+    color:dimgray;
+}
