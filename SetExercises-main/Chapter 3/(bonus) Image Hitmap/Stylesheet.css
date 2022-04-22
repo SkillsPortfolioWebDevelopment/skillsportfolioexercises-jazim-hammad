@@ -1,10 +1,29 @@
-img{
-    padding: 5px;
+/*removing default margins and paddings*/
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: rgb(245, 245, 245);
-    text-decoration-color: rgb(104, 104, 104);
-    text-align: center;
-    font-size: 10pt;
-    font-weight: bold;
+/*adding padding to the image*/
+img {
+  padding: 5px;
+}
+/*Body styling and background colors*/
+body {
+  text-align: center;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*header styling with background colors and drop shadows*/
+header {
+  background-color: burlywood;
+  box-shadow: 2px 2px 5px black;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*hover effects for the header*/
+header:hover {
+  box-shadow: 2px 2px 5px burlywood;
+  transition: 600ms;
 }
