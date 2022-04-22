@@ -1,0 +1,36 @@
+/*background styling and color*/
+body {
+  background-color: #198c86;
+  text-decoration: black;
+  text-align: center;
+  font-family: "Yesteryear", cursive;
+  font-size: x-large;
+}
+/*link styling*/
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+  text-decoration: underline;
+}
+/*Link hover styling*/
+a:hover {
+  text-shadow: 2px 2px 5px white;
+  transform: scale(1.01);
+  transition: 600ms;
+}
+/*center section styling*/
+section {
+  background-color: #b9a68e;
+  border-radius: 7px;
+  width: 600px;
+  height: 400px;
+  margin-left: 30%;
+  margin-top: 7%;
+  padding-top: 150px;
+}
+/*center section hover effects*/
+section:hover {
+  box-shadow: 2px 2px 5px black;
+  transform: scale(1.02);
+  transition: 600ms;
+}
