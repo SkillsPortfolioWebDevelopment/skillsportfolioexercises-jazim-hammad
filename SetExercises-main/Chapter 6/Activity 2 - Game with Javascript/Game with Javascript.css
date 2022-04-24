@@ -1,0 +1,125 @@
+/*Removing default paddings and margins*/
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+/*Background image and font*/
+body {
+  background-image: url(./assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  font-family: "Press Start 2P", cursive;
+}
+/*image css*/
+img {
+  width: 18%;
+  margin-left: 14%;
+  padding: 1%;
+}
+/*Instructions tab styling*/
+.instructions {
+  font-family: "Press Start 2P", cursive;
+  background-color: #e75a10;
+  padding: 2%;
+  margin-top: 11%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 3%;
+  text-align: center;
+  font-size: small;
+  float: left;
+  box-shadow: 3px 3px 5px black;
+  color: #f7d6b5;
+  text-shadow: 4px 2px 0px black;
+}
+/*Game box styling*/
+.game {
+  width: 500px;
+  height: 500px;
+  margin-left: 33.5%;
+  border: 2px dashed black;
+  background-repeat: no-repeat;
+  background-image: url(./assets/mario-bg.jpg);
+  background-size: cover;
+}
+/*Character styling and background images*/
+#character {
+  width: 35px;
+  height: 49px;
+  margin-left: 10px;
+  position: relative;
+  top: 385px;
+  background-repeat: no-repeat;
+  background-image: url(./assets/mario.gif);
+  background-size: cover;
+}
+/*animation class for the character*/
+.animate {
+  animation: jump 0.7s linear;
+}
+/*Animation path using pixels for the character*/
+@keyframes jump {
+  0% {
+    top: 385px;
+  }
+  30% {
+    top: 325px;
+  }
+  70% {
+    top: 325px;
+  }
+  100% {
+    top: 385px;
+  }
+}
+/*block styling, background images and animation*/
+#block {
+  background-repeat: no-repeat;
+  background-image: url(./assets/goomba.gif);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 355px;
+  left: 500px;
+  animation: block 3s infinite linear;
+}
+/*Animation path using pixels for the block*/
+@keyframes block {
+  0% {
+    left: 500px;
+  }
+  50% {
+    left: 250px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+/*text styling*/
+p {
+  text-align: center;
+  padding: 2%;
+  color: white;
+  text-shadow: 2px 3px 1px black;
+}
+h1 {
+  margin-top: 10px;
+}
+.highScore {
+  float: right;
+  margin-right: 7%;
+  margin-top: 18%;
+  padding: 20px;
+}
+p1 {
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 3px 1px black;
+}
+p1:hover {
+  transform: scale(1.05);
+  transition: 500ms;
+}

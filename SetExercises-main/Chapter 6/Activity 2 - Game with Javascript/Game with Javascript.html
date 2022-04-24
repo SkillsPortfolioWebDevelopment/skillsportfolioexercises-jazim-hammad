@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" onkeypress="jump()">
+  <!---tells to jump when key is press-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game with Javascript</title>
+    <!--Icon on the side of the tab-->
+    <link rel="icon" href="./assets/icon.png" />
+    <!--Stylesheet link-->
+    <link rel="stylesheet" href="Game with Javascript.css" />
+    <!--Custom fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Audio for background music on auto play and loop-->
+    <audio
+      src="./assets/Super Mario Bros main theme.mp3"
+      autoplay
+      hidden
+      loop
+      preload="auto"
+    ></audio>
+    <!--Logo at the top link-->
+    <img src="./assets/super mario logo.png" alt="Logo" />
+    <!--Instructions tab on the side-->
+    <div class="instructions">
+      <h1>Instructions</h1>
+      <!--heading-->
+      <br /><br /><br />
+      <p>
+        Press the space bar to <br />
+        jump over the Goomba. <br /><br /><br />
+        If you touch him you <br />
+        will loose the game... <br /><br /><br />
+        Good luck and enjoy
+      </p>
+    </div>
+    <!--Highest score counter-->
+    <div class="highScore">
+      <p1>
+        top Score-
+        <span id="topScore"></span>
+        <br />
+        <br />
+        <br />
+        current highest-
+        <span id="highestScore"></span>
+      </p1>
+    </div>
+    <!--Game box-->
+    <div class="game">
+      <div id="character"></div>
+      <!--character-->
+      <div id="block"></div>
+      <!--block-->
+    </div>
+    <!--Score counter-->
+    <p>Score: <span id="scoreSpan"></span></p>
+  </body>
+  <!--Javascript link-->
+  <script src="Game with Javascript.js"></script>
+</html>
