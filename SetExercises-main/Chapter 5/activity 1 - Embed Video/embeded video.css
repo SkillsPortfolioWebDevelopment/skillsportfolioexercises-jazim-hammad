@@ -1,0 +1,17 @@
+/*body background color*/
+body {
+  background-color: #d4afb9;
+}
+/*video dimensions and styling*/
+video {
+  display: block;
+  margin-top: 5%;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px #121212;
+}
+/*video hover effects*/
+video:hover {
+  transition: 500ms;
+  box-shadow: 4px 4px 5px #ffe8e8;
+}
