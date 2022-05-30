@@ -1,0 +1,572 @@
+/*General CSS*/
+* {
+  padding: 0;
+  margin: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 60px;
+  background-color: #d81717;
+}
+body {
+  background-color: #d9d9d9;
+  font-family: "Comfortaa", cursive;
+  font-size: large;
+}
+#logo {
+  width: 9%;
+}
+/* Adding background color to the menu bar */
+.menu-bar {
+  background-color: white;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  z-index: 0;
+}
+.menu-bar .bx {
+  font-size: 30px;
+  color: #e30101;
+}
+.menu-bar .bx-chevron-down {
+  font-size: 30px;
+  color: black;
+}
+/*menu hover effect CSS*/
+.menu-bar:hover {
+  background-color: white;
+  box-shadow: 2px 2px 5px #484848;
+  transition: 500ms; /*transition for smooth effects*/
+}
+/* Style the links inside the menu bar */
+.menu-bar a {
+  color: #2b2b2b;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #505050;
+  text-decoration: none;
+}
+.menu-bar a:hover {
+  color: #e30101;
+  transition: 500ms;
+  text-decoration: underline 4px #e30101;
+}
+/*Styling the dropdown menu*/
+.dropdown {
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+}
+/*dropdown menu hover effects*/
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #e30101;
+  transition: 500ms;
+}
+/*styling the content inside the menu*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e30101cb;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  width: 300px;
+}
+/*Styling the links inside the menu*/
+.dropdown-content a {
+  color: white;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  margin: 0px;
+}
+/*hover effects for the content*/
+.dropdown-content a:hover {
+  background-color: #ffffffcb;
+  color: #e30101;
+  transition: 500ms;
+  text-decoration: none;
+}
+#call {
+  color: #e30101;
+  padding: 2px;
+}
+/*footer styling*/
+.footer {
+  margin-top: 50px;
+  /*z index to control the stacking order number> order>*/
+  z-index: 0;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 0px 30px 30px;
+}
+/*Styling the contact div inside the form div*/
+.footer .contact {
+  margin-left: 32%;
+  text-align: center;
+  width: 34%;
+}
+/*styling the p tag inside the divs*/
+.footer .contact p {
+  padding: 10px;
+}
+/*styling the ul tag inside the divs*/
+.footer .contact ul {
+  list-style: none;
+}
+/*styling the li tag inside the divs and the ul tag*/
+.footer .contact ul li {
+  padding: 5px;
+}
+/*Hover effects for List items inside the tags*/
+.footer .contact ul li:hover {
+  color: #e30101;
+  text-shadow: 1px 1px 3px #7d7d7d; /*Adding text shadows*/
+  transition: 500ms;
+}
+/*Styling the links inside the list items*/
+.footer .contact ul li a {
+  color: white;
+  text-decoration: none;
+}
+/*Hover effects for the links*/
+.footer .contact ul li a:hover {
+  color: #e30101;
+  text-shadow: 1px 1px 3px #7d7d7d;
+  transition: 500ms;
+}
+/*Styling the p tag in the footer*/
+.footer p {
+  color: #484848;
+}
+/*Styling the text with C id*/
+.footer #C {
+  text-align: center;
+  margin-top: 2%;
+  font-size: small;
+}
+/*CSS for the icons in the footer*/
+.footer .bx {
+  font-size: 20px;
+}
+
+/*HOME.HTML*/
+
+/*Color for the java text typing*/
+span {
+  color: #e30101;
+}
+
+/*Slideshow css for the image show in the background*/
+.slideshow figure {
+  animation: imageAnimation 22s linear infinite 0s; /*animation css*/
+  /*setting the image full screen*/
+  background-size: cover;
+  background-position: center;
+  /*positions and size adjustment*/
+  height: 84.5%;
+  position: absolute;
+  width: 100%;
+  /*z index to control the stacking order number> order>*/
+  z-index: -1;
+}
+/*adding images through urls as background for the slideshow*/
+.slideshow figure:nth-child(1) {
+  background-image: url("./assets/garage/main1.jpeg");
+}
+.slideshow figure:nth-child(2) {
+  animation-delay: 8s;
+  background-image: url("./assets/garage/main2.jpeg");
+}
+.slideshow figure:nth-child(3) {
+  animation-delay: 16s;
+  background-image: url("./assets/garage/main3.jpeg");
+}
+/*Animation for the image transitions*/
+@keyframes imageAnimation {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  35% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  100% {
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+}
+/*center text and form margin*/
+.hover {
+  margin-top: 9%;
+}
+/*Text besides the form*/
+.slogan {
+  color: white;
+  text-shadow: 2px 2px 3px black; /*adding text shadows*/
+  font-size: 25px;
+  width: 560px;
+  margin-left: 11%;
+}
+/*button for instant quotation*/
+button {
+  margin-left: 10%;
+  font-family: "Comfortaa", cursive; /*custom font*/
+  padding: 10px;
+  font-size: medium;
+  background-color: #e30101c0;
+  color: white;
+  border: 0px;
+  box-shadow: 2px 2px 5px black; /*box shadow effect*/
+}
+/*hover effects for the button*/
+button:hover {
+  box-shadow: 2px 2px 5px #727272;
+  border-radius: 7px; /* makes the border round*/
+  transition: 500ms;
+}
+/*Styling the form*/
+.form {
+  border-radius: 5px;
+  color: #000000;
+  background-color: #e9e9e9c0;
+  width: 30%;
+  margin-right: 20%;
+  float: right;
+  text-align: center;
+  padding: 15px;
+  font-size: x-large;
+  box-shadow: 2px 2px 5px black; /*box shadow effect*/
+}
+/*Hover effects*/
+.form:hover {
+  box-shadow: 2px 2px 5px #727272; /*box shadow effect*/
+  border-radius: 10px; /* makes the border round*/
+  transition: 600ms;
+}
+/*styling the text area*/
+textarea {
+  margin-top: 10px;
+  height: 80px;
+  width: 400px;
+  font-family: "Comfortaa", cursive; /*custom font*/
+  box-shadow: inset 1px 1px 3px gray; /*box shadow effect*/
+  padding: 10px;
+}
+/*Hover effects*/
+textarea:hover {
+  transform: scale(1.01); /*scale transform for lifting effects*/
+  transition: 500ms;
+  border-radius: 5px; /* makes the border round*/
+  box-shadow: 1px 1px 3px black; /*box shadow effect*/
+}
+/*styling the input and select elements in .form*/
+.form input,
+select {
+  width: 190px;
+  font-family: "Comfortaa", cursive; /*custom font*/
+  box-shadow: inset 1px 1px 3px gray; /*box shadow effect*/
+  border: #9a9a9a; /*Adding border*/
+  padding: 5px;
+  margin: 10px;
+}
+/*Hover effects of the input and select elements*/
+.form input:hover,
+select:hover {
+  transform: scale(1.01); /*scale transform for lifting effects*/
+  transition: 500ms;
+  border-radius: 5px; /* makes the border round*/
+  box-shadow: 1px 1px 3px black; /*box shadow effect*/
+}
+/*Styling the submit button*/
+#submit {
+  background-color: #e30101;
+  color: #000000;
+}
+/*Hover effects*/
+#submit:hover {
+  transition: 600ms;
+  box-shadow: 1px 1px 2px black;
+}
+/*explore services section*/
+.explore {
+  margin-top: 10%;
+  text-align: center;
+}
+/*Styling the images in this section*/
+.explore img {
+  width: 20%;
+  border-radius: 7px; /* makes the border round*/
+  border: 8px solid #d9d9d9;
+  margin-left: 5px;
+  box-shadow: 2px 2px 5px #646464; /*box shadow effect*/
+}
+/*Hover effects*/
+.explore img:hover {
+  box-shadow: 2px 2px 5px black; /*box shadow effect*/
+  transform: scale(1.01); /*scale transform for lifting effects*/
+  transition: 600ms;
+}
+/*services button styling*/
+#services {
+  background-color: #e30101;
+  margin-left: 0%;
+  margin-top: 20px;
+}
+/*link styling in button*/
+#services a {
+  text-decoration: none;
+  color: white;
+}
+/*section divider*/
+hr {
+  height: 2px;
+  background-color: #2b2b2b;
+}
+/*About us section*/
+
+.about-us {
+  margin-top: 2%;
+  /*z index to control the stacking order number> order>*/
+  z-index: 0;
+  color: black;
+  font-family: "Comfortaa", cursive; /*custom font*/
+  margin-bottom: 25%;
+}
+/*Heading styling*/
+.about-us h1 {
+  text-align: center;
+  text-decoration: underline 3px #e30101;
+  margin-bottom: 5%;
+  text-shadow: 1px 1px 3px black;
+}
+/*text styling for the about us section*/
+.about-us p {
+  font-size: 20px;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+  padding: 20px;
+  width: 690px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 3px #4d4d4d;
+  box-shadow: 1px 1px 3px #484848;
+}
+/*Hover effects*/
+.about-us p:hover {
+  box-shadow: 1px 1px 3px black;
+  transition: 500ms;
+}
+/*styling the image with id B*/
+.about-us #B {
+  width: 23%;
+  margin: 11px;
+}
+/*styling all other images*/
+.about-us img {
+  width: 50%;
+  float: right;
+  margin-right: 10px;
+  box-shadow: 2px 2px 5px #646464; /*box shadow effect*/
+  border-radius: 7px; /* makes the border round*/
+}
+/*Hover effects for the images*/
+.about-us img:hover {
+  box-shadow: 2px 2px 5px black; /*box shadow effect*/
+  transform: scale(1.01); /*scale transform for lifting effects*/
+  transition: 500ms;
+}
+
+/*SERVICES.HTML*/
+
+/*styling the image*/
+.image {
+  background-image: url(./assets/garage/main2.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px #d9d9d9; /*box shadow effect for only bottom*/
+  /*z index to control the stacking order number> order>*/
+  z-index: -1;
+}
+/*Styling the text in front of the photo*/
+.image p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+/*styling the Service div*/
+.services {
+  margin-left: 8%;
+  display: grid; /*Allows items to be in a grid style*/
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /*Determines how many elements in one row*/
+}
+/*Styling the service items*/
+.service-item {
+  background-color: #bc0000;
+  width: 340px;
+  text-align: center;
+  z-index: 0;
+  box-shadow: 2px 2px 4px black; /*box shadow effect*/
+  margin: 10px;
+}
+/*Hover effects*/
+.service-item:hover {
+  transform: scale(1.02); /*scale transform for lifting effects*/
+  transition: 600ms;
+}
+/*styling the images*/
+.service-item img {
+  width: 93%;
+  padding: 5px;
+  border-radius: 7px; /* makes the border round*/
+}
+/*Styling the text*/
+.service-item h2 {
+  padding: 5px;
+  text-shadow: 1px 1px 3px #000000; /*Adding text shadows*/
+  color: white;
+}
+/*Removing link underlines*/
+a {
+  text-decoration: none;
+}
+
+/*ENGINE.HTML*/
+
+/*styling the image*/
+.engine-img {
+  background-image: url(./assets/garage/image30.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px #d9d9d9; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.engine-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+
+/*BODY.HTML*/
+
+/*styling the image*/
+.body-img {
+  background-image: url(./assets/garage/image29.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px white; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.body-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+
+/*MINOR-SERVICE.HTML*/
+
+/*styling the image*/
+.ms-img {
+  background-image: url(./assets/garage/image12.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px white; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.ms-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+
+/*BRAKE SERVICE.HTML*/
+
+/*styling the image*/
+.brake-img {
+  background-image: url(./assets/garage/image26.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px white; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.brake-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+
+/*AC.HTML*/
+
+/*styling the image*/
+.ac-img {
+  background-image: url(./assets/garage/image22.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px #d9d9d9; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.ac-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
+
+/*SYSTEM.HTML*/
+
+/*styling the image*/
+.sys-img {
+  background-image: url(./assets/garage/main3.jpeg); /*Adding the background image at the top*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 630px;
+  box-shadow: inset 0 -90px 90px -90px #d9d9d9; /*box shadow effect for only bottom*/
+}
+/*Styling the text in front of the photo*/
+.sys-img p {
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline 4px #e30101; /*Text decoration to underline*/
+  margin-top: 35%;
+  text-shadow: 1px 1px 4px #000000; /*Adding text shadows*/
+  color: white;
+}
