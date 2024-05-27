@@ -1,0 +1,62 @@
+/*Body css for background image and font styling*/
+body {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Special Elite", cursive;
+  font-size: 20px;
+  color: #000000;
+}
+/*Center tag for the main temperature converter background styling*/
+center {
+  border: 3px black;
+  background-color: #4c4c4cc2;
+  border-radius: 2%;
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 10%;
+  padding-bottom: 4%;
+  padding-top: 1%;
+  box-shadow: 2px 2px 5px black;
+}
+/*Hover effects for the center box*/
+center:hover {
+  box-shadow: 2px 2px 5px #0062ac;
+  transition: 700ms;
+}
+/*Button Styling*/
+button {
+  padding: 7px;
+  margin: 20px;
+  font-family: "Special Elite", cursive;
+}
+/*Convert Button background color using its id*/
+#convert {
+  background-color: #0062ac;
+}
+/*Convert Button hover effects using its id*/
+#convert:hover {
+  cursor: pointer; /* makes the mouse a pointer when hovering over the button*/
+  background: #004377;
+  transition: 500ms;
+  /*Glow foe the button*/
+  box-shadow: 0 0 3px #4f606d, 0 0 15px #4f606d, 0 0 45px #4f606d,
+    0 0 10px #4f606d;
+}
+/*Heading fonts and styling*/
+h1 {
+  font-family: "Special Elite", cursive;
+  text-decoration: underline dashed;
+  color: #000000;
+}
+/*Input box styling with fonts and background colors*/
+input {
+  display: block;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+  font-style: italic;
+  color: #000000;
+  font-family: "Special Elite", cursive;
+  background-color: #4c4c4c9a;
+}

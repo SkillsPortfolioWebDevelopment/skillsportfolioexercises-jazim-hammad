@@ -1,0 +1,155 @@
+/*body css with background image*/
+body {
+  background-image: url(./assets/background\ -\ blur.png);
+  background-size: cover;
+  background-repeat: no-repeat; /*prevents background repetition*/
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  backdrop-filter: blur(2px); /*Blurs background*/
+}
+/*Header Styling*/
+.header {
+  background-color: #f5f5dc90;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-shadow: 2px 2px 7px #343434;
+}
+/*Article tag styling which contains the figma link*/
+article {
+  width: 45%;
+  margin-left: 90%;
+  padding-top: 20px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: x-large;
+  text-decoration: underline;
+}
+/*image styling*/
+img {
+  box-shadow: 2px 2px 5px white;
+  margin-left: 3%;
+}
+/*Image hover styling*/
+img:hover {
+  box-shadow: 2px 2px 5px #008732;
+  margin-left: 3%;
+  transition: 500ms;
+}
+/*Side bar styling */
+.Side-bar {
+  font-family: "Shadows Into Light", cursive;
+  background-color: #f5f5dc90;
+  float: left;
+  padding: 4%;
+  padding-bottom: 7.7%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  font-size: x-large;
+  text-shadow: 2px 2px 7px #343434;
+}
+/*header hover effect styling*/
+.header:hover {
+  background-color: #f5f5dc90;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: 700ms;
+  box-shadow: 5px 5px 10px black;
+}
+/*side bar hover effect styling*/
+.Side-bar:hover {
+  font-family: "Shadows Into Light", cursive;
+  background-color: #f5f5dc90;
+  float: left;
+  padding: 4%;
+  padding-bottom: 7.7%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  font-size: x-large;
+  transition: 700ms;
+  box-shadow: 5px 5px 10px black;
+}
+/*Planner styling*/
+.planner {
+  background-color: #f5f5dc90;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-bottom: 2.5%;
+  border-radius: 10px;
+}
+/*planner hover effect styling*/
+.planner:hover {
+  transition: 700ms;
+  box-shadow: 5px 5px 10px black;
+}
+/*Heading styling*/
+.top-heading {
+  font-family: "Shadows Into Light", cursive;
+  font-size: xx-large;
+  text-align: center;
+  text-decoration: underline #252525;
+}
+/*TH cell styling*/
+th {
+  border: 1px solid black;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 5%;
+  font-family: "Shadows Into Light", cursive;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/*Rows styling*/
+tr {
+  display: inline block;
+}
+/*td cell styling*/
+td {
+  border: 2px solid black;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/*Styling a specific th cell*/
+th:nth-child(1) {
+  font-size: medium;
+  text-align: center;
+  padding-right: 0%;
+}
+/*td hover effects styling*/
+td:hover {
+  transition: 1000ms;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/*Styling a specific tr cell*/
+tr:nth-child(2) {
+  background-color: #315a3c;
+  text-shadow: 1px 1px 2px white;
+}
+/*Styling a specific te cell*/
+tr:nth-child(6) {
+  background-color: #315a3c;
+  text-shadow: 1px 1px 2px white;
+}
+/*Styling a specific tr cell with hover effects*/
+tr:nth-child(2):hover {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+/*Styling a specific tr cell with hover effects*/
+tr:nth-child(6):hover {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+/*image styling*/
+img {
+  width: 10%;
+  border-radius: 10px;
+}
+/*Paragraph text styling*/
+p {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Shadows Into Light", cursive;
+}

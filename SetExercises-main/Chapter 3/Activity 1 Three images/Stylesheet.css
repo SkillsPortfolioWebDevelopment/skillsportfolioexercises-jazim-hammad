@@ -1,0 +1,47 @@
+/*Background styling*/
+body {
+  background-color: #1c8490;
+  align-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: gray;
+}
+/*image styling and effects*/
+img {
+  width: 20%;
+  padding: 5px;
+  box-shadow: 2px 2px 5px black;
+}
+/*image hover effects*/
+img:hover {
+  transform: scale(1.05);
+  transition: 600ms;
+}
+/*image filters according to id's*/
+#A {
+  filter: grayscale(100%);
+}
+#B {
+  filter: blur(2px);
+}
+#C {
+  filter: brightness(80%);
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1c8490;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 250, 208);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

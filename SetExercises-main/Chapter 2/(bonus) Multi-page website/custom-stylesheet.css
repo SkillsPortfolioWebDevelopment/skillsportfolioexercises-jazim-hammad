@@ -1,0 +1,133 @@
+﻿body {
+  font-family: "Baskerville Old Face";
+  color: #e2e2e2;
+  background: rgb(250, 250, 248);
+  background: linear-gradient(
+    180deg,
+    rgba(250, 250, 248, 1) 0%,
+    rgba(1, 1, 0, 1) 0%,
+    rgba(29, 9, 0, 1) 54%,
+    rgba(83, 25, 0, 1) 100%
+  );
+  font-size: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+/* Adding background color to the menu bar */
+.menu {
+  background-color: #391100d7;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+/*menu hover effect CSS*/
+.menu:hover {
+  box-shadow: 2px 2px 5px #772401d7;
+  transition: 500ms; /*transition for smooth effects*/
+}
+
+/* Style the links inside the menu bar */
+.menu a {
+  color: white;
+  text-align: center;
+  padding: 25px 25px 25px 25px;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 3px 3px 5px black;
+}
+/*image styling*/
+img {
+  width: 45%;
+  float: right;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 6px;
+}
+/*image hover styling*/
+img:hover {
+  transform: scale(1.03); /*scale increasing*/
+  transition: 500ms;
+  box-shadow: 2px 2px 5px #2d2d2d;
+}
+/*Footer styling CSS*/
+.footer {
+  background-color: #130600;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+}
+/*Links in the footer styling css*/
+.footer a {
+  margin-top: 500px;
+  color: white;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  font-size: 24px;
+}
+/*Link hover styling*/
+.footer a:hover {
+  background-color: #331000;
+  color: grey;
+  transition: 500ms;
+}
+/*Hover effects for the dropdown menu*/
+.dropdown:hover {
+  background-color: #566573;
+  transition: 500ms;
+}
+/*Styling the dropdown menu*/
+.dropdown {
+  display: inline-block;
+}
+/*styling the content inside the menu*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #391100;
+  min-width: 90px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+/*Styling the links inside the menu*/
+.dropdown-content a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/*hover effects for the content*/
+.dropdown-content a:hover {
+  background-color: #501800;
+  transition: 500ms;
+}
+/*menu hover effects*/
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 500ms;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4d1c00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: 500ms;
+}

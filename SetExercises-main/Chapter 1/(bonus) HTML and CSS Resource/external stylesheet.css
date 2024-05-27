@@ -1,0 +1,12 @@
+﻿/*CSS STYLING FOR THE BODY AND BACKGROUND*/
+body {
+  font-family: "Agency FB"; /*Font family for the text*/
+  font-size: 20px;
+  background-color: aliceblue;
+  text-align: left;
+  color: dimgray;
+}
+/*Removing the listing dots*/
+ul {
+  list-style: none;
+}

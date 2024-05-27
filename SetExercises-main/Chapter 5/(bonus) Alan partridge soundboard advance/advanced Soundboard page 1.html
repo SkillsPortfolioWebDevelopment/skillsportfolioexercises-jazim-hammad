@@ -1,0 +1,104 @@
+<!-- first page for the advanced sound board-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--stylesheet link-->
+    <link rel="stylesheet" href="advanced Soundboard.css" />
+    <title>Advanced Alan Partridge Soundboard</title>
+  </head>
+  <body>
+    <!--Speech box section-->
+    <div class="speechBox">
+      <!--header div with the fish icon-->
+      <div id="fish">
+        <img src="assets/fish.png" alt="White-Fish" /> PSYCHEDELIC FISH
+      </div>
+      <!--text area where you can type for text to speech-->
+      <div>
+        <textarea id="text-Audio" placeholder="Type Here"></textarea>
+      </div>
+      <!-- button for converting text to speech which calls a javascript function-->
+      <div class="speak">
+        <button id="speak" onclick="textToSpeech()">Say it</button>
+      </div>
+    </div>
+
+    <!--Audio sound board section-->
+    <div class="right">
+      <!--heading for the sound board-->
+      <div id="Heading">Audio Sampler Bank 1</div>
+
+      <!--First sound-->
+      <audio id="No" src="assets/no.mp3"></audio>
+      <button onclick="no()">
+        1.<br /><br /><b>No</b><br /><br /><small>0.02</small><br /><br />
+      </button>
+
+      <!--Second sound-->
+      <audio id="aBoot" src="assets/aboot.mp3"></audio>
+      <button onclick="Aboot()">
+        2.<br /><br /><b>Aboot</b><br /><br /><small>0.05</small><br /><br />
+      </button>
+
+      <!--Third sound-->
+      <audio id="tenPast5" src="assets/10-past-5.mp3"></audio>
+      <button onclick="tenPast5()">
+        3.<br /><br /><b>10 Past 5</b><br /><br /><small>0 01</small
+        ><br /><br />
+      </button>
+      <br />
+
+      <!--Fourth sound-->
+      <audio id="firstClass" src="assets/first-class.mp3"></audio>
+      <button onclick="firstClass()">
+        4.<br /><br /><b>First Class</b><br /><br /><small>0 01</small
+        ><br /><br />
+      </button>
+
+      <!--Fifth sound-->
+      <audio id="getRidOfIt" src="assets/get-rid-of-it.mp3"></audio>
+      <button onclick="getRidOfIt()">
+        5.<br /><br /><b>Get Rid Of It</b><br /><br /><small>0.01</small
+        ><br /><br />
+      </button>
+
+      <!--Sixth sound-->
+      <audio id="idLoveTo" src="assets/id-love-to.mp3"></audio>
+      <button onclick="idLoveTo()">
+        6.<br /><br /><b>Id Love To</b><br /><br /><small>0.01</small
+        ><br /><br />
+      </button>
+      <br />
+
+      <!--Seventh Sound-->
+      <audio id="idiot" src="assets/idiot.mp3"></audio>
+      <button onclick="idiot()">
+        7.<br /><br /><b>Idiot</b><br /><br /><small>0.01</small><br /><br />
+      </button>
+
+      <!--Eight sound-->
+      <audio id="mentalist" src="assets/mentalist.mp3"></audio>
+      <button onclick="mentalist()">
+        8.<br /><br /><b>mentalist</b><br /><br /><small>0.02</small
+        ><br /><br />
+      </button>
+
+      <!--Ninth sound-->
+      <audio id="nirvana" src="assets/nirvana.mp3"></audio>
+      <button onclick="nirvana()">
+        9.<br /><br /><b>Nirvana</b><br /><br /><small>0.01</small><br /><br />
+      </button>
+    </div>
+    <!-- buttons to shift through pages-->
+    <div id="pageChange">
+      <ul>
+        <li><a href="advanced Soundboard page 2.html">→</a></li>
+      </ul>
+    </div>
+  </body>
+  <!--java script link-->
+  <script src="advanced Soundboard page 1.js"></script>
+</html>
